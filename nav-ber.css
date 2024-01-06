@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+background-color: aqua;
+}
+.maindiv ul{
+text-align: center;
+}
+ .maindiv ul li{
+display: inline-block;
+margin-left: -4px;
+}
+.maindiv ul li a{
+display: inline-block;
+text-decoration: none;
+padding: 15px 30px;
+transition: .5s;
+border-right: 1px solid #000;
+
+}
+.maindiv ul li:first-child a{
+    border-left: 1px solid #000;
+}
+.maindiv ul li:hover > a{
+background-color: blueviolet;
+}
+
+.maindiv ul li{
+    position: relative;
+}
+.maindiv ul li ul{
+position: absolute;
+top: 100%;
+left: 0;
+width: 200px;
+background-color: cadetblue;
+border-top: 1px solid#fff;
+}
+.maindiv ul li ul li{
+display: block;
+margin-left: 0;
+}
+.maindiv ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.maindiv ul ul li:first-child a{
+    border-left: none;
+}
+
+.maindiv ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.maindiv ul li:hover ul{
+visibility: visible;
+opacity: 1;
+transform: scaleY(1);
+}
+.maindiv ul li ul li a:hover{
+
+}
